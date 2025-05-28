@@ -54,9 +54,9 @@ Analysis is performed in [`main.ipynb`](##):
   ![Image](https://github.com/user-attachments/assets/1f6d8e93-e7e1-4c6e-9ff9-e01223c4a236)
 
 
-  ### Plots andVisualisationss
+## Plots and Visualisations
 
-1. **Fixed Effects Coefficients Plot**
+1. ### Fixed Effects Coefficients Plot
 
    ![Image](https://github.com/user-attachments/assets/9de9e167-4eab-4f7b-a6c5-09d4de1e031a)
 
@@ -64,12 +64,12 @@ This plot displays the fixed effects coefficients of three predictors — **Depe
 
 - Sentence Length has the largest effect, suggesting it is a strong predictor of memory demand.
 
-- Both Dependency Length and Intervener Complexity also contribute positively and significantly, indicating their roles in shaping memory load during sentence processing.
+- Dependency Length and Intervener Complexity also contribute positively and significantly, indicating their roles in shaping memory load during sentence processing.
 
 - The confidence intervals show all effects are statistically robust (non-zero).
 
 
-2. **Regression Plots**
+2. ### Regression Plots
 
    ![Image](https://github.com/user-attachments/assets/b3bb0e7c-7ebc-4dc7-9f12-81bffc2bbd6d)
 
@@ -80,7 +80,7 @@ This plot displays the fixed effects coefficients of three predictors — **Depe
 
 For each predictor, a regression plot shows its relationship with memory load.
 
-3. **Violin Plot**
+3. ### Violin Plot
 
 ![Image](https://github.com/user-attachments/assets/7386a577-4d9c-4a31-a811-72401348d1d5)
 
@@ -88,19 +88,19 @@ This violin plot illustrates the distribution of estimated memory load across mu
 
 - While memory load varies within each language, the overall spread and central values differ across languages.
 
-- Languages like English, Greek, and Portuguese show wider ranges and heavier tails, suggesting more syntactic variability.
+- English, Greek, and Portuguese languages show wider ranges and heavier tails, suggesting more syntactic variability.
 
-- Languages such as Japanese and Korean show more compact distributions, indicating lower and more consistent memory demands.
+- Japanese and Korean languages show more compact distributions, indicating lower and more consistent memory demands.
 
-4. **Actual vs Predicted Bar Plot**
+4. ### Actual vs Predicted Bar Plot
 
 ![image](https://github.com/user-attachments/assets/1b4bc5dd-dee3-4b99-b597-d6a47445063c)
 
  - Compares the mean actual and predicted memory load for each language.
 
 **Model Metrics**
-- **R² Score**: Indicates the proportion of variance explained by the model.
-- **Mean Squared Error (MSE)** and **Mean Absolute Error (MAE)**: Quantify prediction accuracy.
+- **R² Score**: Measures how well the predicted values approximate the actual values. A score close to 1.0 (100%) indicates that the model captures most of the variance in the target variable, showing strong predictive alignment.
+- **Mean Squared Error (MSE)** and **Mean Absolute Error (MAE)**: Quantify the average prediction error. MSE penalizes larger errors more heavily due to squaring, while MAE gives a direct average of the absolute differences. Both are used to assess how closely the model's predictions match the true target values.
 ```
 R² Score: 80.91%
 Mean Squared Error: 8.0970
