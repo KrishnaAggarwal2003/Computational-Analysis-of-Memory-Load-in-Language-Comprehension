@@ -50,8 +50,8 @@ Analysis is performed in [`main.ipynb`](##):
   ```
 - **Interpretation**:  
   The summary table provides coefficients, confidence intervals, and significance for each predictor, indicating their contribution to memory load.
-  ```
-               Mixed Linear Model Regression Results
+  
+              Mixed Linear Model Regression Results
 ===============================================================
 Model:              MixedLM   Dependent Variable:   Memory_load
 No. Observations:   11500     Method:               REML       
@@ -68,7 +68,7 @@ Intervener_Complexity 0.031    0.005  6.158 0.000  0.021  0.040
 Sentence_length       0.389    0.006 62.391 0.000  0.377  0.401
 Group Var             3.216    0.344                           
 ===============================================================
-```
+
 
   
 
