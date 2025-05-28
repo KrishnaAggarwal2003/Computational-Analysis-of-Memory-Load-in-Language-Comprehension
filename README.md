@@ -60,7 +60,14 @@ Analysis is performed in [`main.ipynb`](##):
 
    ![Image](https://github.com/user-attachments/assets/9de9e167-4eab-4f7b-a6c5-09d4de1e031a)
 
-   - Visualises the effect size and confidence intervals for each predictor.
+This plot displays the fixed effects coefficients of three predictors — **Dependency Length, Intervener Complexity**, and **Sentence Length** — on estimated **Memory Load**, with 95% confidence intervals.
+
+- Sentence Length has the largest effect, suggesting it is a strong predictor of memory demand.
+
+- Both Dependency Length and Intervener Complexity also contribute positively and significantly, indicating their roles in shaping memory load during sentence processing.
+
+- The confidence intervals show all effects are statistically robust (non-zero).
+
 
 2. **Regression Plots**
 
@@ -77,7 +84,13 @@ For each predictor, a regression plot shows its relationship with memory load.
 
 ![Image](https://github.com/user-attachments/assets/7386a577-4d9c-4a31-a811-72401348d1d5)
 
- - Displays the distribution of memory load across languages.
+This violin plot illustrates the distribution of estimated memory load across multiple languages. Each violin represents a language's density distribution, central tendency (white dot), and interquartile range (thick bar).
+
+- While memory load varies within each language, the overall spread and central values differ across languages.
+
+- Languages like English, Greek, and Portuguese show wider ranges and heavier tails, suggesting more syntactic variability.
+
+- Languages such as Japanese and Korean show more compact distributions, indicating lower and more consistent memory demands.
 
 4. **Actual vs Predicted Bar Plot**
 
@@ -85,7 +98,7 @@ For each predictor, a regression plot shows its relationship with memory load.
 
  - Compares the mean actual and predicted memory load for each language.
 
-5. **Model Metrics**
+**Model Metrics**
 - **R² Score**: Indicates the proportion of variance explained by the model.
 - **Mean Squared Error (MSE)** and **Mean Absolute Error (MAE)**: Quantify prediction accuracy.
 ```
@@ -102,7 +115,12 @@ Mean Absolute Error: 2.0867
 ![image](https://github.com/user-attachments/assets/ff55af4b-79f9-4602-826c-83854ad85cdf)
 
 
+## Key findings / Conclusions
+- **Dependency length, Intervener complexity**, and **Sentence length** all significantly contribute to memory load.
 
+- There is substantial variation in memory load across languages, as visualised in the violin and bar plots.
+
+- **Intervener Complexity** exerts a greater impact on **Memory load** than **Dependency Length**, suggesting that the structural complexity and type of intervening elements play a more critical role in cognitive processing during sentence comprehension. This indicates that memory load is not merely a function of linear distance (i.e., dependency length), but is more significantly influenced by interveners' syntactic and semantic properties between dependent elements.
 
 
 
