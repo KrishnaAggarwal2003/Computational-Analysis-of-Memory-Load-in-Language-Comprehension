@@ -13,6 +13,24 @@ This project investigates the **memory load** associated with processing sentenc
 - **deep-ud-2.8-data.tgz**: Source treebank archive.
 - **[Language]_data/**: Folders containing `.conllu` files for each language.
 
+## Install Dependencies
+
+Before running the code, make sure to install the required Python packages. You can do this using pip:
+
+```bash
+pip install pandas matplotlib seaborn statsmodels scikit-learn spacy networkx janome konlpy
+```
+
+Run the following PowerShell command to download the appropriate spaCy models. The models are listed in the [`models.txt`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/models.txt)
+
+```Powershell
+Get-Content models.txt | ForEach-Object { python -m spacy download ($_.Trim()) }
+```
+
+**Note:**  
+- For `konlpy` (Korean NLP), you may need Java installed and additional setup depending on your OS.
+- For `janome` (Japanese), no extra setup is needed beyond pip.
+
 ## Data Processing Pipeline
 
 1. **Extraction**:  
