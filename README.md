@@ -16,11 +16,11 @@ This project investigates the **memory load** associated with processing sentenc
 ## Data Processing Pipeline
 
 1. **Extraction**:  
-   - The code in script [`file.ipynb`](##) helps extract the `.conllu` files from the Source treebank archive
-   - The script [`data_extract.py`](##) extracts sentences from `.conllu` files for each language.
+   - The code in script [`file.ipynb`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/file.ipynb) helps extract the `.conllu` files from the Source treebank archive
+   - The script [`data_extract.py`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/data_extract.py) extracts sentences from `.conllu` files for each language.
 
 3. **Feature Computation**:  
-   For each sentence, the following features are computed using [`features_class.memory_load`](##) and [`features_class.fixed_effects`](##):
+   For each sentence, the following features are computed using [`features_class.memory_load`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/features_class.py) and [`features_class.fixed_effects`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/features_class.py):
    - **Dependency Length** refers to the number of words between a head and its dependent in a sentence’s syntactic structure. It is used as a proxy for working memory load in language processing. The **Dependency Length Minimisation (DLM)** hypothesis suggests that natural languages prefer shorter dependencies to reduce cognitive effort.
 
    - **Intervener Complexity** is a metric that counts the number of intervening heads between a dependent and its head in a dependency tree. It is proposed as a more precise approximation of memory load than dependency length, capturing structural rather than linear distance.
@@ -32,11 +32,11 @@ This project investigates the **memory load** associated with processing sentenc
    Feature extraction is parallelised across languages for efficiency.
 
 5. **Data Aggregation**:  
-   All features are compiled into a nested dictionary and saved as **Project_data.csv**.
+   All features are compiled into a nested dictionary and saved as [`Project_data.csv`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/Project_data.csv).
 
 ## Statistical Analysis
 
-Analysis is performed in [`main.ipynb`](##):
+Analysis is performed in [`main.ipynb`](https://github.com/KrishnaAggarwal2003/Computational-Analysis-of-Memory-Load-in-Language-Comprehension/blob/main/main.ipynb):
 
 ### Linear Mixed Model (LMM)
 
@@ -100,7 +100,7 @@ This violin plot illustrates the distribution of estimated memory load across mu
 
 **Model Metrics**
 - **R² Score**: Measures how well the predicted values approximate the actual values. A score close to 1.0 (100%) indicates that the model captures most of the variance in the target variable, showing strong predictive alignment.
-- **Mean Squared Error (MSE)** and **Mean Absolute Error (MAE)**: Quantify the average prediction error. MSE penalizes larger errors more heavily due to squaring, while MAE gives a direct average of the absolute differences. Both are used to assess how closely the model's predictions match the true target values.
+- **Mean Squared Error (MSE)** and **Mean Absolute Error (MAE)**: Quantify the average prediction error. MSE penalises larger errors more heavily due to squaring, while MAE gives a direct average of the absolute differences. Both are used to assess how closely the model's predictions match the true target values.
 ```
 R² Score: 80.91%
 Mean Squared Error: 8.0970
